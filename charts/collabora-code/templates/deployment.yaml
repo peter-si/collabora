@@ -26,11 +26,13 @@ spec:
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           env:
+            {{- if .Values.collabora.DONT_GEN_SSL_CERT }}
             - name: DONT_GEN_SSL_CERT
               valueFrom:
                 configMapKeyRef:
                   name: {{ include "collabora-code.fullname" . }}
                   key: DONT_GEN_SSL_CERT
+            {{ end }}
             - name: dictionaries
               valueFrom:
                 configMapKeyRef:

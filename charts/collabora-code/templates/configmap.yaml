@@ -3,7 +3,9 @@ kind: ConfigMap
 metadata:
   name: {{ include "collabora-code.fullname" . }}
 data:
+  {{- if .Values.collabora.DONT_GEN_SSL_CERT }}
   DONT_GEN_SSL_CERT: "{{ .Values.collabora.DONT_GEN_SSL_CERT }}"
+  {{- end }}
   dictionaries: {{ .Values.collabora.dictionaries }}
   domain: {{ .Values.collabora.domain }}
   extra_params: {{ .Values.collabora.extra_params }}
