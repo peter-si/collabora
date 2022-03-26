@@ -18,4 +18,3 @@ helm repo update
   ```bash
   helm install my-release peter-si/collabora-code
   ```
-
