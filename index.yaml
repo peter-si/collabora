@@ -1,0 +1,17 @@
+apiVersion: v1
+entries:
+  collabora-code:
+  - apiVersion: v2
+    appVersion: 21.11.3.3.1
+    created: "2022-03-26T10:47:47.615250505Z"
+    description: A Helm chart for Collabora Office - CODE-Edition
+    digest: fe911f05eb83057711f25c0ed00453d34f08fde42cc7753a13c7e53f312348c9
+    home: https://peter-si.github.io/helm/
+    icon: https://avatars.githubusercontent.com/u/7016180?v=4
+    name: collabora-code
+    sources:
+    - https://peter-si.github.io/helm/
+    urls:
+    - https://github.com/peter-si/helm/releases/download/collabora-code-1.0.1/collabora-code-1.0.1.tgz
+    version: 1.0.1
+generated: "2022-03-26T10:47:47.615255634Z"
