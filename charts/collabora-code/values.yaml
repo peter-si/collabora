@@ -24,6 +24,7 @@ ingress:
   paths: []
   hosts: []
   tls: []
+  className:
 
 collabora:
   DONT_GEN_SSL_CERT: true
