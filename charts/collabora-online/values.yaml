@@ -21,10 +21,8 @@ global:
       type: ClusterIP
       externalPort: 9980
       internalPort: 9980
-  ingress:
-    name: collabora-online
 
-replicaCount: 3 # This is the amount of how many instances of coolwsd will run
+replicaCount: 1 # This is the amount of how many instances of coolwsd will run
 
 image:
   pullPolicy: Always
@@ -70,12 +68,6 @@ environmentVariablesCool:
 
 service:
   name: collabora-online
-
-hpa:
-  name: collabora-online
-
-hosts:
-  host: coolwsd.public.example.com
 
 namespace:
   collabora: collabora
