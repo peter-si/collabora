@@ -29,6 +29,14 @@ entries:
     version: 1.0.1
   collabora-online:
   - apiVersion: v1
+    created: "2022-05-14T08:44:43.969955687Z"
+    description: Collabora Online helm chart
+    digest: 9aa0da0d43c4b63d18c077316dc7e646eb5533fe5969784fc669f2d0c3136d89
+    name: collabora-online
+    urls:
+    - https://github.com/peter-si/helm/releases/download/collabora-online-0.0.2/collabora-online-0.0.2.tgz
+    version: 0.0.2
+  - apiVersion: v1
     created: "2022-05-14T08:34:23.124658263Z"
     description: Collabora Online helm chart
     digest: 0705c9bd207a9cdffba6e8adb1d391097ba76746894aefd7688ee8d30f7cd411
@@ -36,4 +44,4 @@ entries:
     urls:
     - https://github.com/peter-si/helm/releases/download/collabora-online-0.0.1/collabora-online-0.0.1.tgz
     version: 0.0.1
-generated: "2022-05-14T08:34:23.124666063Z"
+generated: "2022-05-14T08:44:43.969977588Z"
